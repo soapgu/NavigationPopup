@@ -21,7 +21,7 @@ import android.widget.TextView;
 public class AFragment extends Fragment {
 
     private static int aIndex = 0;
-    private int index;
+    private final int index;
 
     public AFragment() {
         // Required empty public constructor
@@ -36,8 +36,7 @@ public class AFragment extends Fragment {
      */
     // TODO: Rename and change types and number of parameters
     public static AFragment newInstance() {
-        AFragment fragment = new AFragment();
-        return fragment;
+        return new AFragment();
     }
 
     @Override

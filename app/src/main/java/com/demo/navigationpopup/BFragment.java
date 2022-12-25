@@ -19,7 +19,7 @@ import android.widget.TextView;
 public class BFragment extends Fragment {
 
     private static int bIndex = 0;
-    private int index;
+    private final int index;
 
     public BFragment() {
         bIndex ++;
