@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,5 +55,12 @@ public class BFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TextView textView = view.findViewById(R.id.msg);
         textView.setText( String.format("This is %d BFragment!",index ) );
+        view.findViewById(R.id.btn_back_a).setOnClickListener( v -> {
+            /*
+            NavDirections action = BFragmentDirections.actionBFragmentToAFragment();
+            Navigation.findNavController(view).navigate(action);
+             */
+            Navigation.findNavController(view).popBackStack();
+        } );
     }
 }

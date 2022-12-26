@@ -3,4 +3,5 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="jump_b">跳转B</string>
+    <string name="back_a">回到A</string>
 </resources>

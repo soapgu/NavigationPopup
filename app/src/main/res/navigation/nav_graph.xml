@@ -18,5 +18,12 @@
         android:id="@+id/BFragment"
         android:name="com.demo.navigationpopup.BFragment"
         android:label="fragment_b"
-        tools:layout="@layout/fragment_b" />
+        tools:layout="@layout/fragment_b" >
+        <action
+            android:id="@+id/action_BFragment_to_AFragment"
+            app:destination="@id/AFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/AFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
 </navigation>
