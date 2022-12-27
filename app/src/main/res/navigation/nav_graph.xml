@@ -25,5 +25,13 @@
             app:launchSingleTop="true"
             app:popUpTo="@id/AFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_BFragment_to_CFragment"
+            app:destination="@id/CFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/CFragment"
+        android:name="com.demo.navigationpopup.CFragment"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c" />
 </navigation>
